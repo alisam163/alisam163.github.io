@@ -1,43 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./local/css/style.css" />
+    <title>Discover</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Header start -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__wrapper">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+            <div class="header__logo">
+              <a href="/" class="header__logo-link">
+                <img
+                  src="./local//img/svg/odigo-logo.svg"
+                  alt="logo"
+                  class="header__logo-pic"
+                />
+              </a>
+            </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#!" class="header__link">Articles</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Locations</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Videos</a>
+              </li>
+              <li class="header__item">
+                <a href="#!" class="header__link">Sign in</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <main class="main">
+      <!-- Intro start -->
+      <section class="intro">
+        <div class="wrapper">
+          <h1 class="intro__title">Discover Amazing places in Japan</h1>
+          <p class="intro__subtitle">
+            Jump off balcony, onto stranger's head. Chase ball of string hide
+            when guests come over. Being gorgeous with belly side up i could pee
+            on this if i had the energy but under the bed, for attack the child,
+            open the door
+          </p>
+          <form class="search-form">
+            <fieldset class="search-form__wrap">
+              <p class="search-form__info">
+                <input
+                  type="text"
+                  name="user-like-to-do"
+                  class="search-form__field"
+                  placeholder="What would you like to do?"
+                />
+                <input
+                  type="text"
+                  name="user-like-to-go"
+                  class="search-form__field"
+                  placeholder="Where would you like to go?"
+                />
+                <button type="submit" class="search-form__submit">
+                  Search
+                </button>
+              </p>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <!-- Intro end -->
+
+      <!-- Benefits start -->
+      <section class="benefits">
+        <div class="benefits__wrap">
+          <h2 class="benefits__title">Benefits of Odigo</h2>
+          <div class="benefits__cards">
+            <div class="benefits__card">
+              <div class="benefits__card-pic">
+                <img
+                  src="./local/img/svg/temple-icon.svg"
+                  alt="temple-icon"
+                  class="benefits__card-thumb"
+                />
+              </div>
+              <h3 class="benefits__card-title">Welcome to Odigo!</h3>
+              <p class="benefits_card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string
+                hide when guests come over.
+              </p>
+              <a href="#!" class="benefits__card-more"> LEARN MORE </a>
+            </div>
+            <div class="benefits__card">
+              <div class="benefits__card-pic">
+                <img
+                  src="./local/img/svg/person-icon.svg"
+                  alt="temple-icon"
+                  class="benefits__card-thumb"
+                />
+              </div>
+              <h3 class="benefits__card-title">Your Personal Japan Guide</h3>
+              <p class="benefits_card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+              </p>
+              <a href="#!" class="benefits__card-more"> LEARN MORE </a>
+            </div>
+            <div class="benefits__card">
+              <div class="benefits__card-pic">
+                <img
+                  src="./local/img/svg/shop-icon.svg"
+                  alt="temple-icon"
+                  class="benefits__card-thumb"
+                />
+              </div>
+              <h3 class="benefits__card-title">Promoting Local Businesses</h3>
+              <p class="benefits_card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+              </p>
+              <a href="#!" class="benefits__card-more"> LEARN MORE </a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Benefits end -->
+
+      <!-- Places start -->
+      <section class="places">
+        <div class="wrapper-full">
+          <div class="places__caption">
+            <h2 class="places__title section-title">
+              Get inspired for your next trip
+            </h2>
+            <a href="#!" class="places__view-all">VIEW ALL</a>
+          </div>
+
+          <div class="places__cards">
+            <figure class="places__card places__card_size_lg">
+              <img src="./local/img/mount_fuji.jpg" alt="Mount Fuji" class="places__card-pic places__card-pic_size_lg">
+              <figcaption class="places__card-title">
+                Mount Fuji
+              </figcaption>
+              <a href="#!" class="places__card-link"></a>
+              </figure>
+            <figure class="places__card places__card_size_lg">
+              <img src="./local/img/kyoto.jpg" alt="Kyoto" class="places__card-pic places__card-pic_size_lg">
+              <figcaption class="places__card-title">
+                Kyoto
+              </figcaption>
+              <a href="#!" class="places__card-link"></a>
+            </figure>
+
+            <figure class="places__card places__card_size_sm">
+              <img src="./local/img/Tokyo.jpg" alt="Tokyo" class="places__card-pic places__card-pic_size_sm">
+              <figcaption class="places__card-title">
+                Tokyo
+              </figcaption>
+              <a href="#!" class="places__card-link"></a>
+            </figure>
+            <figure class="places__card places__card_size_sm">
+              <img src="./local/img/Niigata-1.jpg" alt="Niigata" class="places__card-pic places__card-pic_size_sm">
+              <figcaption class="places__card-title">
+                Niigata
+              </figcaption>
+              <a href="#!" class="places__card-link"></a>
+            </figure>
+            <figure class="places__card places__card_size_sm">
+              <img src="./local/img/Sapporo.jpg" alt="Sapporo" class="places__card-pic places__card-pic_size_sm">
+              <figcaption class="places__card-title">
+                Sapporo
+              </figcaption>
+              <a href="#!" class="places__card-link"></a>
+            </figure>
+            
+          </div>
+        </div>
+      </section>
+      <!-- Places end -->
+
+      <!-- Tours start -->
+      <div class="tours">
+        <div class="wrapper-full">
+
+          <div class="tours__tour tour">
+            <div class="tour-pic">
+              <img src="./local/img/tour-1.jpg" alt="Prefecture in Focus: Tottori" class="tour__thumb">
+            </div>
+            <div class="tour__info">
+              <h3 class="tour__title">Prefecture in Focus: Tottori</h3>
+              <p class="tour__desc">
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door
+              </p>
+              <a href="#!" class="tour__more">VIEW PREFECTURE</a>
+            </div>
+          </div>
+          <div class="tours__tour tour">
+            <div class="tour__info">
+              <h3 class="tour__title">Featured Neighborhood: Kyoto’s Arashiyama</h3>
+              <p class="tour__desc">
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door
+              </p>
+              <a href="#!" class="tour__more">VIEW PREFECTURE</a>
+            </div>
+            <div class="tour-pic">
+              <img src="./local/img/tour-2.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thumb">
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Tours end -->
+
+      <!-- Top start -->
+      <section class="top">
+        <div class="wrapper-full">
+          <h2 class="top__title section-title">
+            Today top places to visit
+          </h2>
+
+          <div class="top__cards">
+
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img src="./local/img/NAGOYA.jpg" alt="NAGOYA" class="top__card-thumb">
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    NAGOYA
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">221</span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top_card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+              </p>
+
+              <a href="#!" alt="SEE MORE" class="top__card-more search-form__submit">
+                SEE MORE
+              </a>
+
+            </div>
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img src="./local/img/NIIGATA.jpg" alt="NIIGATA" class="top__card-thumb">
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    NIIGATA
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">221</span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top_card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+              </p>
+
+              <a href="#!" alt="SEE MORE" class="top__card-more search-form__submit">
+                SEE MORE
+              </a>
+
+            </div>
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img src="./local/img/OSAKA.jpg" alt="OSAKA" class="top__card-thumb">
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    OSAKA
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">221</span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top_card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+              </p>
+
+              <a href="#!" alt="SEE MORE" class="top__card-more search-form__submit">
+                SEE MORE
+              </a>
+
+            </div>
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img src="./local/img/SAITAMA.jpg" alt="SAITAMA" class="top__card-thumb">
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    SAITAMA
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">221</span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top_card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+              </p>
+
+              <a href="#!" alt="SEE MORE" class="top__card-more search-form__submit">
+                SEE MORE
+              </a>
+
+            </div>
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img src="./local/img/UENO.jpg" alt="UENO" class="top__card-thumb">
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    UENO
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">221</span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top_card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+              </p>
+
+              <a href="#!" alt="SEE MORE" class="top__card-more search-form__submit">
+                SEE MORE
+              </a>
+
+            </div>
+            <div class="top__card">
+              <div class="top__card-pic">
+                <img src="./local/img/SHIBUYA.jpg" alt="SHIBUYA" class="top__card-thumb">
+                <div class="top__card-stats">
+                  <h3 class="top__card-title">
+                    SHIBUYA
+                  </h3>
+                  <div class="top__card-likes">
+                    <span class="top__card-likes-value">221</span>
+                  </div>
+                  <div class="top__card-comments">
+                    <span class="top_card-comments-value">
+                      50
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <p class="top__card-desc">
+                Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+              </p>
+
+              <a href="#!" alt="SEE MORE" class="top__card-more search-form__submit">
+                SEE MORE
+              </a>
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+      <!-- Top end -->
+
+      <!-- Videos start -->
+      <div class="videos">
+        <div class="videos__wrap">
+          <div class="video__item">
+
+            <iframe class="video__element" src="https://www.youtube.com/embed/AY5qcIq5u2g?si=bKWmmnkxbEt6BJQC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Videos end -->
+      
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__item">
+          <div class="footer__logo">
+            <img src="./local/img/svg/odigo-logo.svg" alt="logo" class="footer__logo-pic">
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <h3 class="footer__menu-title">Company</h3>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">About</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Team</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Careers</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Privacy Policy</a>
+              </li>
+            </ul>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <h3 class="footer__menu-title">Locations</h3>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Tokyo</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Kyoto</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Osaka</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Hokkaido</a>
+              </li>
+            </ul>
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <h3 class="footer__menu-title">Social Media</h3>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Facebook</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Twitter</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Instagram</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#!" class="footer__menu-link">Youtube</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./local/js/main.js"></script>
   </body>
 </html>
