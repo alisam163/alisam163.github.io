@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/alisam163.github.io/static/css/main.dc4d6ff2.css",
+    "main.js": "/alisam163.github.io/static/js/main.4981dcbc.js",
+    "index.html": "/alisam163.github.io/index.html",
+    "main.dc4d6ff2.css.map": "/alisam163.github.io/static/css/main.dc4d6ff2.css.map",
+    "main.4981dcbc.js.map": "/alisam163.github.io/static/js/main.4981dcbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc4d6ff2.css",
+    "static/js/main.4981dcbc.js"
+  ]
+}
