@@ -654,7 +654,7 @@ img{
 /* Footer styles end */
 
 /* Media styles start */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 380px) {
   .intro {
     min-height: 100%;
     padding-bottom: 110px;
@@ -667,6 +667,14 @@ img{
   .benefits {
     margin-bottom: 10px;
   }
+  .benefits__wrap {
+    box-shadow: none;
+  }
+
+  .benefits__card {
+    grid-column: span 6;
+    margin-bottom: 60px;
+  }
   
   .benefits__cards {
     padding: 0 15px;
@@ -675,10 +683,6 @@ img{
 
   .benefits__title {
     padding: 35px 15px;
-  }
-
-  .benefits__wrap {
-    box-shadow: none;
   }
 
   .places {
@@ -706,6 +710,10 @@ img{
 
   .tour__title {
     margin-bottom: 45px;
+  }
+  .top__card {
+    grid-column: span 6;
+    margin-bottom: 10px;
   }
 }
 
